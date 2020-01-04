@@ -15,16 +15,24 @@ Maintenance Log:
       
       
    After each card, show menu with options to choose from (may be just 1: proceed)
-   
+- Maybe make subclass for each type of card. 
 */
 
 public class DBCXCardGameCard {
    // Fields
-   private String type;
+   ///private String type;
    
    // Constructor
    public DBCXCardGameCard(String type) {
-      this.type = type;
+      ///this.type = type;
+      if (type.equals("character")) {
+         // Construct subclass CharacterCard
+      }
+   }
+   
+   // Zero argument constructor
+   public DBCXCardGameCard() {
+   
    }
    
 }
